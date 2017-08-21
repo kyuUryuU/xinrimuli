@@ -13,15 +13,22 @@
 		background: url('D6Q5_@F95YCMK}XWS4@L5W.gif') repeat;
 
 	}
+	.ads{position:relative;
+		top:50%;left:50%;width:100px;height:100px;border:1px solid #f00;boredr-radius:50px;}
 </style>
 </head>
 <body>
-<div id='bg'>
+<div id='ads'>Loading...</div>
+
 <audio src='究刺少女大百合 - 【哲学】新日暮里电♂音节-Astronomia【强烈推荐】.mp3' autoplay="autoplay" loop="loop" preload="preload">
-</div>
+
 <script type="text/javascript">
+var ads=document.getElementById('ads');
+	function completeloading(){
+		if(document.readyState=='complete'){ads.style.display = 'none'}
+	}
+	document.onreadystatechange=completeloading;
 	window.onload=function(){
-		if(document.readyState!=='complete'){document.write('11111')}
 	document.body.style.background="url('D6Q5_@F95YCMK}XWS4@L5W.gif') repeat";}
 </script>
 </body>
